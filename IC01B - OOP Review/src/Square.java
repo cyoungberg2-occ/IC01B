@@ -1,4 +1,9 @@
+/**
+ * @author Courtney.Youngberg
+ * @version 09042019
 
+ *
+ */
 public class Square {
 	
 	private double width;
@@ -28,8 +33,5 @@ public class Square {
 	public String toString() {
 		return "Square [width=" + width + ", Area=" + getArea() + "]";
 	}
-	
-	
-	
-	
+		
 }

@@ -1,3 +1,9 @@
+/**
+ * @author Courtney.Youngberg
+ * @version 09042019
+ *
+ */
+
 import java.lang.reflect.Array;
 
 public class TestShapes {
@@ -11,7 +17,7 @@ public class TestShapes {
 	System.out.print(test.toString());
 	System.out.println();
 	System.out.println();
-	
+		
 	manyCirclez();
 	
 	Rectangle rectang = new Rectangle(5, 4);
@@ -62,4 +68,5 @@ public class TestShapes {
 		System.out.println();
 		
 	}
+
 }

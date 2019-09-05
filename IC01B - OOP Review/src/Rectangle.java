@@ -1,4 +1,9 @@
+/**
+ * @author Courtney.Youngberg
+ * @version 09042019
 
+ *
+ */
 public class Rectangle {
 	
 	private double height;
@@ -42,9 +47,5 @@ public class Rectangle {
 	public String toString() {
 		return "Rectangle [height=" + height + ", width=" + width + ", area=" + getArea() + "]";
 	}
-
-	
-	
-	
 
 }
