@@ -10,8 +10,11 @@ SequenceTest(){getTests(getClass());constructorData = new String[][]{{"int[]"},
 };}public void _test_1(){checkSlice1(3,"{4, 5}");}public void _test_2(){
 checkSlice1(-1, "{5}");}public void _test_3(){checkSlice1(0,"{1, 2, 3, 4, 5}");
 }public void _test_4(){checkSlice1(1,"{2, 3, 4, 5}");}public void _test_5(){ 
-checkSlice1(2,"{3, 4, 5}");}public void _test_6(){checkSlice1(4,"{5}");}public 
-void _test_7(){checkSlice1(5,"{}");}public void _test_8(){checkSlice1Throws(6);
+checkSlice1(2,"{3, 4, 5}");}
+
+public void _test_6(){checkSlice1(4,"{5}");}
+
+public void _test_7(){checkSlice1(5,"{}");}public void _test_8(){checkSlice1Throws(6);
 }public void _test_9(){checkSlice1Throws(-6);}public void _test_10(){checkSlice1
 (-2,"{4, 5}");}public void _test_11(){checkSlice1(-3,"{3, 4, 5}");}public void 
 _test_12(){checkSlice1(-4,"{2, 3, 4, 5}");}public void _test_13(){checkSlice1(

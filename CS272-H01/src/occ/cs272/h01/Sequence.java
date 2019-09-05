@@ -3,7 +3,6 @@
  * H01-Sequence.java
  */
 package occ.cs272.h01;
-import java.util.*;
 
 /**
  * @author cyoungberg2
@@ -28,24 +27,24 @@ public class Sequence
     }
     
    public Sequence slice(int start) {
-    	int[] slice = new int[array.length-start];
+    	int[] result = new int[array.length-start];
     	int increment = 0;
        	
     	if(start < 0) {
-    		for(int i = slice.length; i > 0; i--) {
-    			increment = slice.length;
-    			slice[increment] = array[i];
-    			increment--;
+    		for(int i = result.length-1; i > 0; i--) {
+    			System.out.println(i);
+    			result[increment] = array[i];
+    			increment++;
     			}
     	}
     	else if(start >= 0) {
     		for(int i = start; i < array.length; i++) {
-    			slice[increment] = (array[i]);
+    			result[increment] = (array[i]);
     			increment++;
     		}
     	}
     	    	
-    return new Sequence(slice);}
+    return new Sequence(result);}
    
     	
     public Sequence slice(int start, int end) {
@@ -74,9 +73,7 @@ public class Sequence
   	
     return new Sequence(slice);}
   	
-   
-    
-    @Override
+   @Override
     public String toString()
     {
         String result = "{";
@@ -97,7 +94,7 @@ public class Sequence
         // some informal testing
        System.out.println("a.slice(0)->" + a.slice(0));
        System.out.println("a.slice(1)->" + a.slice(1));
-       //System.out.println("a.slice(-1)->" + a.slice(-1));
+       System.out.println("a.slice(-1)->" + a.slice(-1));
        //System.out.println("a.slice(-2)->" + a.slice(-2));
        System.out.println("a.slice(5)->" + a.slice(5));
       // System.out.println("a.slice(-5)->" + a.slice(-5));

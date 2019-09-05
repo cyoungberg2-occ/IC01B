@@ -26,14 +26,14 @@
 public class Circle {
 
 	private double radius;
-	
+
 	public Circle() {
 		radius = 0;
-		
 	}
+	
 	public Circle(double radiusInput) {
 		radius = radiusInput;
-	}
+		}
 	
 	public double getRadius() {
 		return radius;
@@ -47,6 +47,13 @@ public class Circle {
 	public void setRadius(double newRadius) {
 		radius = newRadius;
 	}
+
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + ", getArea()=" + getArea() + "]";
+	}
+
+
 	
 	
 }
