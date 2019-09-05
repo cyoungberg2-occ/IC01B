@@ -92,16 +92,16 @@ public class Sequence
     {
         Sequence a = new Sequence(new int[]{1, 2, 3, 4, 5});
         // some informal testing
-       System.out.println("a.slice(0)->" + a.slice(0));
-       System.out.println("a.slice(1)->" + a.slice(1));
+      // System.out.println("a.slice(0)->" + a.slice(0));
+      // System.out.println("a.slice(1)->" + a.slice(1));
        System.out.println("a.slice(-1)->" + a.slice(-1));
        //System.out.println("a.slice(-2)->" + a.slice(-2));
-       System.out.println("a.slice(5)->" + a.slice(5));
+      // System.out.println("a.slice(5)->" + a.slice(5));
       // System.out.println("a.slice(-5)->" + a.slice(-5));
-       System.out.println("a.slice(0, 5, 2)->" + a.slice(0, 5, 2));
-       System.out.println("a.slice(1, 5, 2)->" + a.slice(1, 5, 2));
-       System.out.println("a.slice(1, 5, 3)->" + a.slice(1, 5, 3));
-       System.out.println("a.slice(2, 5, 3)->" + a.slice(2, 5, 3));
+     //  System.out.println("a.slice(0, 5, 2)->" + a.slice(0, 5, 2));
+     //  System.out.println("a.slice(1, 5, 2)->" + a.slice(1, 5, 2));
+      // System.out.println("a.slice(1, 5, 3)->" + a.slice(1, 5, 3));
+      // System.out.println("a.slice(2, 5, 3)->" + a.slice(2, 5, 3));
       // System.out.println("a.slice(-1, -6, -1)->" + a.slice(-1, -6, -1));
     }
 }
