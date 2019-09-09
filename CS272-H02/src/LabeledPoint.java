@@ -26,7 +26,7 @@ public class LabeledPoint
       return lp1.equals(lp2);
    }
    
-   public boolean equals() {
+ /* public boolean equals() {
 	   if(lp1.equals(lp2) {
 		   return true;
 	   }
@@ -34,6 +34,7 @@ public class LabeledPoint
 		   return false;
 	   }
    }
+   */
    
    public String toString(){
       return "LabeledPoint[x=" + x + ",y=" + y + ",label=" + label + "]";
