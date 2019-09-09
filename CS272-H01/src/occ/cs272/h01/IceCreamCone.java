@@ -12,7 +12,7 @@ package occ.cs272.h01;
 public class IceCreamCone
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Cyoungberg2";
+    public static final String STUDENT = "cyoungberg2";
     public static final String ASSIGNMENT = "H01-B";
 
 
