@@ -26,15 +26,15 @@ public class LabeledPoint
       return lp1.equals(lp2);
    }
    
- /* public boolean equals() {
-	   if(lp1.equals(lp2) {
+ public boolean equals(LabeledPoint lp2) {
+	   if(this == lp2) {
 		   return true;
 	   }
 	   else {
 		   return false;
 	   }
    }
-   */
+   
    
    public String toString(){
       return "LabeledPoint[x=" + x + ",y=" + y + ",label=" + label + "]";
