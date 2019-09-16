@@ -27,14 +27,11 @@ public class LabeledPoint
    }
    
  public boolean equals(LabeledPoint lp2) {
-	   if(this == lp2) {
+	   if(this.x == lp2.x && this.y == lp2.y && this.label.equals(lp2.label)) 
 		   return true;
-	   }
-	   else {
-		   return false;
-	   }
-   }
-   
+	return false;
+	      
+ }
    
    public String toString(){
       return "LabeledPoint[x=" + x + ",y=" + y + ",label=" + label + "]";

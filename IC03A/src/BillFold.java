@@ -11,7 +11,15 @@ public class BillFold {
 	
 	public void addCard(Card c) 
 	{
-		
+		if(card1 == null) {
+			card1 = c;
+		}
+		else if(card2 == null) {
+			card2 = c;
+		}
+		else {
+			System.out.println("Error: Both cards are currently full.");
+		}
 	}
 	
 	public String formatCards() {
