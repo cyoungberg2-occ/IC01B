@@ -26,4 +26,12 @@ public class Card
    {
       return "Card holder: " + name;
    }
+   
+   //@override
+   public boolean equals(Object otherObject)
+   {
+      Card other = (Card) otherObject;
+      return name.equals(other.name) && getClass() == otherObject.getClass();
+   }
+
 }

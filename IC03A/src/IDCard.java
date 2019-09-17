@@ -13,5 +13,16 @@ public class IDCard extends Card{
 	      return super.format() + " ID Number: " + idNumber;	
 	      
 	   }
+	   
+	   public String getId(){
+		   return idNumber;
+	   }
+	   
+	   public boolean equals(Object otherObject)
+	   {
+	      IDCard other = (IDCard) otherObject;
+	      return super.equals(otherObject) && getClass() == otherObject.getClass() && idNumber == other.getId();
+	   }
+
 	
 }
