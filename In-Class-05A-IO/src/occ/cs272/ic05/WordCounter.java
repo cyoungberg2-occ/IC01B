@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.Scanner;
 
 /**
  * Reading and processing text files.
@@ -16,7 +17,7 @@ import java.io.Writer;
 public class WordCounter
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your login ID here";
+    public static final String STUDENT = "cyoungberg2";
     public static final String ASSIGNMENT = "IC05-B";
     
     /**
@@ -26,11 +27,18 @@ public class WordCounter
      */
     public void countWords(Reader reader, Writer writer) 
     {
-        // 1. Construct the Scanner and PrintWriter objects
-        // TODO: your work here
+   
+    	
+    	// 1. Construct the Scanner and PrintWriter objects
+     
+        Scanner in = new Scanner(reader);
+        int count = 0;
         
         // 2. Read the input file, writing the output for each line
-        // TODO: your work here
+        while (in.hasNext()) {
+        	count++;
+        	
+        }
         
         // 3. Close all files
         // TODO: your work here

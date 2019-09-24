@@ -1,5 +1,9 @@
 package occ.cs272.ic05;
 
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 /**
  * 
  * FileAnalyzer
@@ -22,22 +26,32 @@ public class FileAnalyzer
     * @param inputFileName the name of the input file
     * @throws FileNotFoundException 
    */
-   public String longestWord(String inputFileName)
+   public String longestWord(String inputFileName) throws FileNotFoundException
    {
        // Store the largest word in this variable
        String result = "";
+       
        // 1. Construct a FileReader and a Scanner
        // TODO: your work here
-
+       FileReader fr = new FileReader(inputFileName);
+       Scanner in = new Scanner(fr);
+       
        
        // 2. Use the Scanner to read all of the words
        //   Keep track of which is largest
        // TODO: your work here
-       
+       while(in.hasNext()) 
+       {
+    	   String word = in.next();	   
+    	   if(word.length() > result.length()) {
+    		   result = word;
+    	   }
+    	   
+       }
        
        // 3. Close the files
        // TODO: your work here 
-
+       in.close();
        
        // Return the result
        return result;
