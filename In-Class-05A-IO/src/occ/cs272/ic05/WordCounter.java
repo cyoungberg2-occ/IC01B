@@ -1,6 +1,7 @@
 package occ.cs272.ic05;
 
 import java.io.FileReader;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
@@ -28,20 +29,34 @@ public class WordCounter
     public void countWords(Reader reader, Writer writer) 
     {
    
-    	
-    	// 1. Construct the Scanner and PrintWriter objects
+     	// 1. Construct the Scanner and PrintWriter objects
      
         Scanner in = new Scanner(reader);
-        int count = 0;
-        
+        PrintWriter out = new PrintWriter(writer);
+   
         // 2. Read the input file, writing the output for each line
-        while (in.hasNext()) {
-        	count++;
+        while(in.hasNext()) {
+        	
+        	String line = in.nextLine();
+        	
+        	int wordCount = 0;
+        	Scanner lineIn = new Scanner(line);
+        	while(lineIn.hasNext()) {
+        		String dummy = lineIn.next();
+        		wordCount++;
+        	}
+        	lineIn.close();
+        	
+        	out.println(wordCount + "   " + line);
         	
         }
         
+
         // 3. Close all files
         // TODO: your work here
+        
+        in.close();
+        out.close();
     }
 
     /**
