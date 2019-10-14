@@ -8,6 +8,9 @@ public class QuickSorter
       Sorts an array, using quick sort.
       @param a the array to sort
      */
+	public static long swapCount;
+	public static long compCount;
+	
     public static void sort(int[] a)
     {  
         sort(a, 0, a.length - 1);
@@ -41,9 +44,9 @@ public class QuickSorter
         int j = to + 1;
         while (i < j)
         {
-            i++; while (a[i] < pivot) { i++; }
-            j--; while (a[j] > pivot) { j--; }
-            if (i < j) { ArrayUtil.swap(a, i, j); }
+            i++; while (a[i] < pivot) { i++; compCount++;}
+            j--; while (a[j] > pivot) { j--; compCount++;}
+            if (i < j) { ArrayUtil.swap(a, i, j); swapCount++; }
         }
         return j;
     }

@@ -23,7 +23,7 @@ public class SelectionSourceCountDemo
 			SelectionSorter.sort(a);
 
 
-			System.out.println(a.length + " Elemetns. Comparisons made: " 
+			System.out.println(a.length + " Elements. Comparisons made: " 
 					+ SelectionSorter.getcCount());
 		}
 	}

@@ -5,13 +5,13 @@ import java.util.Arrays;
  */
 public class InsertionSortDemo
 {  
-    public static void main(String[] args)
+    public static void sort(int[] a)
     {  
-        int[] a = ArrayUtil.randomIntArray(20, 100);
-        System.out.println(Arrays.toString(a));
+        int[] z = ArrayUtil.randomIntArray(20, 100);
+        System.out.println(Arrays.toString(z));
 
-        InsertionSorter.sort(a);
+        InsertionSorter.sort(z);
 
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(z));
     }
 }
