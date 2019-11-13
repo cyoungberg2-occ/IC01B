@@ -4,6 +4,17 @@
  */
 public class MergeSorter
 {
+	public static long cCount=0;
+	public static void restcCount() {
+		cCount = 0;
+	}
+	public static long getcCount() {
+		return cCount;
+	}
+	public static void cCountInc() {
+		cCount++;
+	}
+	
     /**
       Sorts an array, using merge sort.
       @param a the array to sort
@@ -15,12 +26,16 @@ public class MergeSorter
         int[] second = new int[a.length - first.length];
         // Copy the first half of a into first, the second half into second
         for (int i = 0; i < first.length; i++) 
-        { 
+        {
             first[i] = a[i]; 
+            cCountInc();
+           
         }
         for (int i = 0; i < second.length; i++) 
         { 
             second[i] = a[first.length + i]; 
+            cCountInc();
+           
         }
         sort(first);
         sort(second);
@@ -59,13 +74,13 @@ public class MergeSorter
         // Note that only one of the two loops below copies entries
         // Copy any remaining entries of the first array
         while (iFirst < first.length) 
-        { 
+        {   cCountInc();
             a[j] = first[iFirst]; 
             iFirst++; j++;
         }
         // Copy any remaining entries of the second half
         while (iSecond < second.length) 
-        { 
+        {   cCountInc();
             a[j] = second[iSecond]; 
             iSecond++; j++;
         }

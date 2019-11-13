@@ -4,12 +4,24 @@
  */
 public class QuickSorter
 {
+	
+	public static long cCount=0;
+	public static void restcCount() {
+		cCount = 0;
+	}
+	public static long getcCount() {
+		return cCount;
+	}
+	public static void cCountInc() {
+		cCount++;
+	}
+	
     /**
       Sorts an array, using quick sort.
       @param a the array to sort
      */
 	public static long swapCount;
-	public static long compCount;
+
 	
     public static void sort(int[] a)
     {  
@@ -44,8 +56,8 @@ public class QuickSorter
         int j = to + 1;
         while (i < j)
         {
-            i++; while (a[i] < pivot) { i++; compCount++;}
-            j--; while (a[j] > pivot) { j--; compCount++;}
+            i++; while (a[i] < pivot) { i++; cCountInc();}
+            j--; while (a[j] > pivot) { j--; cCountInc();}
             if (i < j) { ArrayUtil.swap(a, i, j); swapCount++; }
         }
         return j;

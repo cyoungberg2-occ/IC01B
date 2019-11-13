@@ -16,4 +16,3 @@ public class QuickSortDemo
         System.out.println(Arrays.toString(a));
     }
 }
-
